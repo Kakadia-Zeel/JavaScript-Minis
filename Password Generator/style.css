@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("./backgroundImage.jpg");
+	color: #fff;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+p {
+	margin: 5px 0;
+}
+
+h1 {
+	margin: 10px 0 20px;
+	text-align: center;
+  font-size: 1.7em;
+
+}
+
+  input[type=checkbox] {
+    margin-right: 0;
+  }
+
+.container {
+	background-color: #4b1539;
+	/* box-shadow: 30px 30px 30px rgba(208, 223, 188, 0.911); */
+	padding: 30px;
+	width: 400px;
+	max-width: 100%;
+}
+
+.result-container {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+	max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+  font-weight: bold;
+	color: rgb(3, 3, 3);
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: #EFF1DB;
+}
+
+.btn-large {
+	display: block;
+	width: 100%;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
+
+
+.floating-btn {
+	border-radius: 26.5px;
+  font-weight: bold;
+	background-color: #FBC740;
+	border: 1px solid #0e1116;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #161618;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #A3EBB1;
+	color: #070707;
+  
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
